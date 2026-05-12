@@ -70,6 +70,7 @@ main {
 
 main div {
     border: solid 2px white;
+    width: 30em;
 }
 
 main ul {
@@ -82,10 +83,18 @@ li {
     text-align: left;
 }
 
-.new_repo_imgs {
-    display: flex;
-    justify-content: center;
+.img_container {
+    display: block;
+    background: linear-gradient(to top, black, white);
+    grid-template-columns: repeat(1fr, 150px);
+    justify-content: space-between;
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
 }
+
 
 
 footer {
@@ -93,11 +102,24 @@ footer {
 }
 
 @media (max-width: 576px) {
+    main {
+        font-size: 90%;
+    }
+
+    .img_container {
+        display: none;
+    }
+}
+@media (max-width: 768px) {
+    .img_container {
+        max-width: 90%;
+        height: auto;
+    }
     
 }
-@media (min-width: 768px) {
-    
+@media (min-width: 992px) {.img_container {
+    max-width: 110%;
+    height: auto;
 }
-@media (min-width: 992px) {
     
 }
