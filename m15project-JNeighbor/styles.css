@@ -74,14 +74,17 @@ main div {
 
 main ul {
     line-height: 2em;
+    margin: 2em;
 }
 
 li {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-align: left;
 }
 
 .new_repo_imgs {
     display: flex;
+    justify-content: center;
 }
 
 
