@@ -1,0 +1,57 @@
+body {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-style: oblique;
+    text-align: center;
+    background-image: url(wichita_keeper_sunset2_016_preview-a0cdb73d67f1483f9c7fbc71b8c82658.jpg);
+    /* Credit to C2 Photography */
+    background-position: fixed;
+}
+
+h2 {
+    text-align: center;
+}
+
+p {
+    color: whitesmoke;
+    text-shadow: .5ch .5ch 4px black;
+}
+
+a {
+    color: lightblue;
+    
+}
+
+a:hover {
+    color: rebeccapurple;
+    font-size: 110%;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+  }
+  /* To make skip links visible on focus */
+  .visually-hidden:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: absolute;
+	width: auto;
+	/* Adjust the remaining properties to match design */
+	outline: none;
+	top: 10px;
+	left: 10px;
+  }
+
+  .visually-hidden:focus{
+	text-align: center;
+	font-size: larger;
+	color: lightblue;
+  }

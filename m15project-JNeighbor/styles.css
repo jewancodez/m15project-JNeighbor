@@ -1,0 +1,100 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: larger;
+    background: linear-gradient(to right, black, darkgrey);
+    text-align: center;
+    
+}
+
+header div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to left, black, darkgrey);
+    border-radius: 1em;
+    h1 {
+        text-shadow: 2px 2px 2px white;
+    }
+}
+
+header nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background: linear-gradient(to right, black, darkgrey);
+    border: solid 10px;
+    border-image: linear-gradient(to left, black, darkgrey) 1; 
+}
+
+nav {
+	display: flex;
+	flex-direction: row;
+	background-color: #20102D;
+	padding-left: 20px;
+}
+
+nav a {
+	padding: 0;
+	text-decoration: none;
+	color: white;
+}
+
+a:active {
+	color: grey;
+}
+
+a:hover {
+	color: black;
+    font-style: italic;
+}
+
+
+.right {
+    filter: invert(1);
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-evenly;
+    color: white;
+}
+
+main div {
+    border: solid 2px white;
+}
+
+main ul {
+    line-height: 2em;
+}
+
+li {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.new_repo_imgs {
+    display: flex;
+}
+
+
+footer {
+    color: white;
+}
+
+@media (max-width: 576px) {
+    
+}
+@media (min-width: 768px) {
+    
+}
+@media (min-width: 992px) {
+    
+}

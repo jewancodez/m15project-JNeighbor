@@ -1,0 +1,45 @@
+:root {
+    --page-height: 200;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: var(--page-height)vh;
+    background-image: url(congrats.png);
+    background-attachment: fixed;
+
+    justify-items: center;
+    text-align: center;
+    margin-top: auto;
+}
+
+table {
+    text-align: left;
+    align-items: justify;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+
+h1 {
+    color: gold;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: xx-large;
+    text-shadow: 0.5ch 0.5ch 10px black;
+}
+
+p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: larger;
+    list-style-type: none;
+    color: aqua;
+    text-shadow: 0.5ch 0.5ch 10px black;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+
+

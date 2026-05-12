@@ -1,0 +1,11 @@
+1. create repository
+    a. name
+    b. public/private
+
+2. run BASH commands for git
+    a. init
+    b. add .
+    c. commit -m
+    d. branch -M main
+    e. remote add origin "github_repo_url"
+    f. push -u origin main

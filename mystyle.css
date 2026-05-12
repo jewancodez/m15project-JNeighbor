@@ -1,0 +1,50 @@
+body {font-family: 'Courier New', Courier, monospace; 
+      font-size: 100%;
+      line-height: 1.5em;
+      background-color: rgb(234, 217, 200);}
+
+h1 {font-family: Arial, Helvetica, sans-serif; color: olive}
+
+h2 {
+      font-family: Georgia, 'Times New Roman', Times, serif; 
+      color: orangered;
+      text-shadow: 2px 2px 4px white;
+}
+
+#banner {display: block; margin: auto;}
+
+blockquote, blockquote p em {font-style: italic; text-shadow: 2px 2px 4px rebeccapurple;}
+
+dt {
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-style: bold;
+}
+
+a:link {color: olive;}
+a:visited {color: red;}
+a:hover {
+      color: brown;
+}
+
+.visually-hidden {
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+.visually-hidden:focus {
+	clip: auto;
+	height: auto;
+	margin: 0;
+	overflow: visible;
+	position: absolute;
+	width: auto;
+	/* Adjust the remaining properties to match design */
+	outline: none;
+	top: 10px;
+	left: 10px;
+}

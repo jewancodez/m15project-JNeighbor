@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  margin: 10;
+  
+}
+
+body {
+  font-size: 12pt;
+  font-family: Cambria, Times, "Times New Roman", serif;
+  background: linear-gradient(to left, #650000, #000);
+  margin: 0 5%;
+  width: auto;
+  text-align: center;
+}
+
+main {
+  border: 1px solid goldenrod;
+  margin: 1em;
+  padding: 1em;
+}
+
+h1, footer {
+  font-family: fantasy;
+  color: beige;
+  text-shadow: 4px 4px 5px black;
+}
+
+.banner {
+  border-radius: 1em;
+  border: 1px solid goldenrod;
+  max-width: 100%;
+  height: auto;
+}
+
+h2{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  padding-left: 1em;
+  border: #fff;
+  border-radius: 1em;
+  color: #650000;
+  text-shadow: 2px 2px 6px rgb(249, 213, 191);
+  text-align: left;
+}
+ 
+h3{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  border: #fff;
+  border-radius: 1em;
+  color: #681f1f;
+  border: solid 1px black;
+}
+
+
+p, ul{
+  color: rgb(221, 199, 79);
+}
+
+.container {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.text {
+  flex: 1;
+}
+
+.image {
+  background-color: white;
+  border-radius: 2em;
+  width: 100px;
+  height: auto;
+}
+
+.container2 {
+  display: grid;
+  background: linear-gradient(to left,#650000, goldenrod);
+  
+
+  align-items: center;
+  text-align: left;
+  padding: 10px;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr 150px);
+  border: solid 1px black;
+}
+
+.text2 a{
+  color: #650000;
+  font-family: fantasy;
+  font-size: larger;
+  flex:1;
+}
+
+.container2 img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 2em;
+}
+
+@media print {
+    body {
+      font-family: Cambria, Times, "Times New Roman", serif;
+      color: #000;
+      background-color: #fff;
+      margin: 0 10%;
+      width: auto;
+    }
+    /* set widths of column structure floated elements to 100% */
+    #content {
+      width: 100%;
+    }
+    #sidebar, #navbar {
+      display: none;
+    }
+    /* reset specified text color to black */
+    h1, h2, p {
+      color: #000;
+    }
+    h1 {
+      font-size: 18pt;
+    }
+    h2 {
+      font-size: 16pt;
+    }
+    /* reset specified background color to white */
+    header, footer {
+      background-color: #fff;
+    }
+
+    .container2 img {
+      display: none;
+    }
+
+    a:link, a:visited {
+      color: #000;
+      text-decoration: none;
+    }
+    /* prints the URL in parentheses after external links - ignore parse error in CSS validator */
+    a[href^="http"]:after {
+      content: ' (' attr(href) ') ';
+      text-align: left;
+      font-size: small;
+    }
+}
+
+@media screen and (max-width: 300px) {
+  body {
+    font-size: 95%;
+  }
+
+  .container2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 499px) {
+  .container2 img {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .container2 {
+    grid-template-columns: repeat(3, 1fr, 150px);
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 11pt;
+  }
+
+  .container2 {
+    grid-template-columns: repeat(3, 1fr 130px);
+  }
+
+  .container2 img {
+    max-width: 130px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  body {
+    font-size: 12pt;
+  }
+
+  .container2 {
+    grid-template-columns: repeat(3, 1fr 160px);
+  }
+
+  .container2 img {
+    max-width: 160px;
+  }
+}

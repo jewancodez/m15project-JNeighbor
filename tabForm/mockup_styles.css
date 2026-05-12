@@ -1,0 +1,91 @@
+:root {
+    --page-height: 150;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: var(--page-height)vh;
+
+    justify-content: center;
+
+    background-image: url(gym_image.png);
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    text-shadow: 2px 2px 4px black;
+}
+
+table {
+    text-align: left;
+    align-items: justify;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+th {
+    border: 1px solid white;
+    color: red;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+
+td, h2 {
+    border: 1px solid white;
+}
+
+
+fieldset input, table caption {
+    background-color: white;
+    color: blue;
+}
+
+li input{
+    color: black;
+}
+
+table {
+    color: whitesmoke;
+    background-color: purple;
+}
+
+
+table ul {
+    color: bisque;
+}
+
+img {
+    justify-content: center;
+}
+
+form, form ul, p {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    align-items: center;
+    font-size: larger;
+    list-style-type: none;
+
+    background-color: aqua;
+}
+
+footer {
+    position: absolute;
+    bottom: var(--page-height)vh;
+    color: whitesmoke;
+}
+
+option {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    justify-content: center;
+    font-size: larger;
+    list-style-type: none;
+
+    background-color: white;
+}
+
+.tiers {
+    display: flex;
+    width: fit-content;
+    margin: 0 auto;
+}

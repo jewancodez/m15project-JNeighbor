@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="mystyles.css">
+        <link rel="stylesheet" href="./jquery-ui-1.14.2.custom/jquery-ui.min.css">
+        <script src="./jquery-ui-1.14.2.custom/external/jquery/jquery.js"></script>
+        <script src="./jquery-ui-1.14.2.custom/jquery-ui.min.js"></script>
+    </head>
+
+    <body>
+        <header>
+            <h1>Event Registration</h1>
+        </header>
+
+        <main>
+            <div class="details">
+                <h2>Event Details</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur tempora odio, dignissimos labore expedita nemo sit mollitia, eligendi aliquam quam deserunt debitis voluptatum minus quibusdam, perferendis repellendus ducimus! Molestiae, ad.</p>
+            </div>
+
+            <div class="details">
+                <h2>Registration Requirements</h2>
+                <img src="details.png" alt="details icon">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem aliquid tempora! Laudantium doloremque cum ea velit, quaerat ab quia voluptate inventore rem quasi, iste perspiciatis, similique fuga tempora aut?</p>
+            </div>
+            <div class="details">
+                <h2>Booking</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta rem aliquid tempora! Laudantium doloremque cum ea velit, quaerat ab quia voluptate inventore rem quasi, iste perspiciatis, similique fuga tempora aut?</p>
+            </div>
+
+            <div class="box">
+                <h1>loading... <span class="number" data-val="100">0</span></h1>
+                <div class="progress">
+                    <div class="bar"></div>
+                </div>
+            </div>
+
+              <!-- <label>Schedule a date:</label>
+              <label><input type="text" name="date" id="date"></label> -->
+              <form id="bookingForm">
+                <label>Schedule a date:</label>
+                <input type="text" name="date" id="date">
+                <button type="submit">Submit</button>
+            </form>
+            
+            <script>
+              $(function () {
+                $("#date").datepicker();
+            
+                $("#bookingForm").on("submit", function (e) {
+                  e.preventDefault(); 
+            
+                  const span = document.querySelector(".number");
+                  const bar = document.querySelector(".bar");
+            
+                  let counter = 0;
+            
+                  const timer = setInterval(() => {
+                    if (counter >= 100) {
+                      clearInterval(timer);
+                    } else {
+                      counter++;
+                      span.innerHTML = counter + "%";
+                      bar.style.width = counter + "%";
+                    }
+                  }, 30);
+                });
+              });
+            </script>
+              
+
+            <footer>&copy; Jewan Neighbor</footer>
+        </main>
+    </body>
+</html>

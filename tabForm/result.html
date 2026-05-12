@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="result_styles.css">
+    </head>
+    
+    <main>
+        <body>
+            <h1>Congratulations</h1>
+            <p id="result"></p>
+            <script>
+                const params = new URLSearchParams(window.location.search);
+
+                const firstName = params.get("firstName");
+                const lastName = params.get("lastName");
+
+                document.getElementById("result").innerHTML = firstName + " " + lastName;
+            </script>
+            <p>You signed up for a membership!</p>
+        </body>
+
+        <footer>Site Creator: Jewan Neighbor copyright &copy;</footer>
+    </main>
+</html>

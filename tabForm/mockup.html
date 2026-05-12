@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mockup Page</title>
+        <link rel="stylesheet" href="mockup_styles.css">
+    </head>
+<body>
+    <main>
+        <h1>Gym Membership Signup</h1>
+        <!-- <img src="gym_image.png" width="500px" hieght="300px" alt="wide image of gym" id="banner"></img> -->
+        <table>
+            <caption>Tier Description</caption>
+            <tr>
+                <th>Basic</th>
+                <th>Plus</th>
+                <th>Pro</th>
+                <th>Elite</th>
+            </tr>
+            <tr>
+                <td>$5/month</td>
+                <td>$15/month</td>
+                <td>$35/month</td>
+                <td>$65/month</td>
+                
+            </tr>
+            <tr>
+                <td>Access to gym equipment, machines, and lockers only.
+                    <ul>
+                        <li>&check; Machines</li>
+                        <li>&check; Equipment</li>
+                        <li>&check; Lockers</li>
+                        <li>&times; Pool/Cold Plunge</li>
+                        <li>&times; Sauna/Steam Room</li>
+                        <li>&times; 24/7 access</li>
+                    </ul>
+                </td>
+                <td>Increased access to facilities like indoor/outdoor pool and sauna.
+                    <ul>
+                        <li>&check; Machines</li>
+                        <li>&check; Equipment</li>
+                        <li>&check; Lockers</li>
+                        <li>&check; Pool/Cold Plunge</li>
+                        <li>&check; Sauna/Steam Room</li>
+                        <li>&times; 24/7 access</li>
+                    </ul>
+                </td>
+                <td>Full access to all facilities at certain locations.
+                    <ul>
+                        <li>&check; Machines</li>
+                        <li>&check; Equipment</li>
+                        <li>&check; Lockers</li>
+                        <li>&check; Pool/Cold Plunge</li>
+                        <li>&check; Sauna/Steam Room</li>
+                        <li>&check; 24/7 access (select locations)</li>
+                    </ul>
+                </td>
+                <td>24/7 access to all facilities at all locations.
+                    <ul>
+                        <li>&check; Machines</li>
+                        <li>&check; Equipment</li>
+                        <li>&check; Lockers</li>
+                        <li>&check; Pool/Cold Plunge</li>
+                        <li>&check; Sauna/Steam Room</li>
+                        <li>&check; 24/7 access</li>
+                    </ul>
+                </td>
+        </table>
+
+        <form action="result.html" method="GET">
+            <fieldset>
+                <legend>Account Sign Up</legend>
+                <ul>
+                    <li>
+                        <label for="fName">First Name: </label><input type="text" name="firstName" id="fName">
+                    </li>
+                    <li>
+                        <label for="lName">Last Name: </label><input type="text" name="lastName" id="lName">
+                    </li>
+                    <li>
+                        <label for="pw">Password: </label><input type="password" name="password" id="pw">
+                    </li>
+                </ul>
+
+                <label for="tiers">Tier Selection</label>
+                <select id="tiers" class="tiers" name="tiers" size="4" multiple>
+                        <option>Basic</option>
+                        <option>Plus</option>
+                        <option>Pro</option>
+                        <option>Elite</option>
+                </select>
+
+                <input type="submit" value="Subscribe">
+            </fieldset>
+        </form>
+    </main>
+    <footer>Site Creator: Jewan Neighbor copyright &copy;</footer>
+</body>
+</html>
