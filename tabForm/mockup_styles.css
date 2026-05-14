@@ -12,7 +12,23 @@ body {
     background-image: url(gym_image.png);
 }
 
+
+
+header h1 {
+    text-align: center;
+    justify-self: center;
+}
+
+.home_nav {
+    justify-self: left;
+    background-color: aliceblue;
+    border-radius: 2em;
+    padding: 10px;
+}
+
 h1 {
+    display: flex;
+    justify-content: space-between;
     text-align: center;
     color: white;
     text-shadow: 2px 2px 4px black;

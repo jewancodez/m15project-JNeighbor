@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta charset="UTF-8">
+
+        <title>Congratulations</title>
+
         <link rel="stylesheet" href="result_styles.css">
     </head>
     
-    <main>
-        <body>
+    <body>
+        <main>
             <h1>Congratulations</h1>
             <p id="result"></p>
             <script>
@@ -18,8 +22,14 @@
                 document.getElementById("result").innerHTML = firstName + " " + lastName;
             </script>
             <p>You signed up for a membership!</p>
-        </body>
+
+            <!-- <h1><a href="/site/index.html">RETURN HOME</a></h1> -->
+             <nav class="sticky">
+                <h2><a href="mockup.html">Submission Form</a></h1>
+                <h2><a href="/site/index.html">Home Page</a></h1>
+             </nav>
+            </main>
 
         <footer>Site Creator: Jewan Neighbor copyright &copy;</footer>
-    </main>
+        </body>
 </html>

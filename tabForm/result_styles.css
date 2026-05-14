@@ -3,15 +3,19 @@
 }
 
 body {
-    display: flex;
+    display: grid;
     flex-direction: column;
-    min-height: var(--page-height)vh;
     background-image: url(congrats.png);
-    background-attachment: fixed;
-
-    justify-items: center;
+    place-items: center;
+    height: 100vh;
+    align-items: center;
     text-align: center;
-    margin-top: auto;
+}
+
+main {
+    background: linear-gradient(to left, black, white);
+    padding: 20px;
+    border-radius: 2em;
 }
 
 table {
@@ -22,10 +26,20 @@ table {
 
 
 h1 {
-    color: gold;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: xx-large;
-    text-shadow: 0.5ch 0.5ch 10px black;
+    text-shadow: 0.5ch 0.5ch 10px goldenrod;
+}
+
+.sticky {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: flex-start; */
+    background-color: goldenrod;
+    /* text-align: left; */
+    min-width: 90px;
+    padding: 20px;
+    border-radius: 2em;
 }
 
 p {

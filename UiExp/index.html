@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="UTF-8">
+
         <link rel="stylesheet" href="mystyles.css">
         <link rel="stylesheet" href="./jquery-ui-1.14.2.custom/jquery-ui.min.css">
         <script src="./jquery-ui-1.14.2.custom/external/jquery/jquery.js"></script>
@@ -10,6 +12,7 @@
 
     <body>
         <header>
+          <h1 class="home_nav"><a href="/site/index.html">Home</h1></a>
             <h1>Event Registration</h1>
         </header>
 
@@ -30,7 +33,12 @@
             </div>
 
             <div class="box">
-                <h1>loading... <span class="number" data-val="100">0</span></h1>
+              <form id="bookingForm">
+                <label>Schedule a date:</label>
+                <input type="text" name="date" id="date">
+                <button type="submit">Submit</button>
+            </form>
+                <h1 class="loading">loading... <span class="number" data-val="100">0</span></h1>
                 <div class="progress">
                     <div class="bar"></div>
                 </div>
@@ -38,11 +46,7 @@
 
               <!-- <label>Schedule a date:</label>
               <label><input type="text" name="date" id="date"></label> -->
-              <form id="bookingForm">
-                <label>Schedule a date:</label>
-                <input type="text" name="date" id="date">
-                <button type="submit">Submit</button>
-            </form>
+              
             
             <script>
               $(function () {
@@ -50,6 +54,8 @@
             
                 $("#bookingForm").on("submit", function (e) {
                   e.preventDefault(); 
+                  
+                  
             
                   const span = document.querySelector(".number");
                   const bar = document.querySelector(".bar");
