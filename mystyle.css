@@ -48,3 +48,9 @@ a:hover {
 	top: 10px;
 	left: 10px;
 }
+
+footer {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}

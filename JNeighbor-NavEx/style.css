@@ -87,6 +87,12 @@ aside a:hover {
 .crumbs a:hover {
     color: blueviolet;
 }
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
 @media only screen and (max-width: 880px) {
     nav {
         display: flex;

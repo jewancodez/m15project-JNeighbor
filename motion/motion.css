@@ -150,6 +150,9 @@ main {
 }
 
 footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     background: goldenrod;
     color: white;
     text-align: center;

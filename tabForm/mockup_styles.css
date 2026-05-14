@@ -74,7 +74,7 @@ img {
     justify-content: center;
 }
 
-form, form ul, p {
+form, form ul {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
     align-items: center;
@@ -85,9 +85,22 @@ form, form ul, p {
 }
 
 footer {
-    position: absolute;
-    bottom: var(--page-height)vh;
-    color: whitesmoke;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    p {
+        background-color: white;
+        padding: 10px;
+        border-radius: 2em;
+    }
+
+    img {
+        background-color: white;
+        padding: 10px;
+        border-radius: 2em;
+    }
 }
 
 option {
